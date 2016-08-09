@@ -1,0 +1,17 @@
+<h1>Do me!</h1>
+<img src="http://i.imgur.com/0byFAHS.gif?noredirect">
+
+<ul>
+  <% @tasks.each do |task| %>
+    <li>
+
+      <%= link_to task.name, task_path(task) %> | <%= link_to 'Delete', task_path(task), method: :delete %>
+    </li>
+  <% end %>
+</ul>
+
+
+<%= link_to "Go home", tasks_path %>
+<%= link_to "Create a new task", new_task_path %>
+
+

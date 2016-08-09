@@ -1,0 +1,13 @@
+<h3> What: </h3><%= @task.name %>
+<h3> When: </h3><%= @task.created_at %></h3>
+<h3> Done? </h3><%= @task.done %>
+
+
+<h2>
+<%= link_to "Edit", edit_task_path(@task) %>
+
+</h2>
+
+<h2>
+<%= link_to "Go home", tasks_path %>
+</h2>
